@@ -17,4 +17,5 @@ for key in "${!result[@]}"
 do
 values+=("${result[$key]}")
 done
-echo "All result is :" ${values[@]}
+
+echo "result is sorted by Descending Order: " ${values[@]} |tr ' ' '\n' | sort -rn
