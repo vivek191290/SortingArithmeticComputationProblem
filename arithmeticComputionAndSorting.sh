@@ -12,4 +12,9 @@ result[2]=$((a*b+c))
 result[3]=$((c+a/b))
 result[4]=$((a%b+c))
 
-echo "Stored the all computation result in dectionary " ${result[@]}
+values=()
+for key in "${!result[@]}"
+do
+values+=("${result[$key]}")
+done
+echo "All result is :" ${values[@]}
