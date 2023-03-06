@@ -6,3 +6,4 @@ read -p "Enter third number : " c
 
 result=$((a+b*c))
 result=$((a*b+c))
+result=$((c+a/b))
