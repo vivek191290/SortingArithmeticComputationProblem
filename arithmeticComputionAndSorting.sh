@@ -19,3 +19,5 @@ values+=("${result[$key]}")
 done
 
 echo "result is sorted by Descending Order: " ${values[@]} |tr ' ' '\n' | sort -rn
+
+echo "result is sorted by Ascending Order: " ${values[@]} | tr ' ' '\n' | sort -n
